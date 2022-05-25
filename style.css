@@ -14,19 +14,42 @@
 }
 
 /* ====== NAVEGATION =================================================*/
+
+button:hover {
+    color: white;
+    background: var(--primary-hover);
+}
+
+
+button {
+    background: var(--primary);
+    color: white;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    width: 37rem;
+    padding: 1.5rem 0rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/* ====== NAVEGATION =================================================*/
 body {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
-    padding-inline: 2rem;
 }
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1rem;
 
-    margin: 1.5rem 1rem 1.5rem 0;
 
-    margin-inline: auto;
 }
 
 nav .logo {
@@ -56,22 +79,14 @@ nav ul li, .login {
 }
 
 nav .login {
-    background: var(--primary);
     color: white;
     padding: 0.4rem 3rem;
-    border: 0;
     border-radius: 0.7rem;
 }
 
-nav .login:hover{
-    color: white;
-    background: var(--primary-hover);
-}
 
 
-nav ul li:hover {
-    color: var(--primary-hover);
-}
+
 
 /* ====== NAVEGATION =================================================*/
 
@@ -79,42 +94,91 @@ nav ul li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding-top: 10rem;
+    align-content: flex-end;
+    height: 55rem;
     gap: 8%;
 }
 
-.home img {
-    width: 28rem;
-    height: 28rem;
+.home img,
+.serviços img {
+    width: 47rem;
+    height: 47rem;
 }
+
 .home h2{
-    font-size: 2rem; 
+    font-size: 3rem; 
 
 
 }
 .home h1 {
     color: var(--primary);
-    font-size: 3.2rem; 
-    font-size: 5rem; 
+    font-size: 7rem; 
+    font-weight: 700;
 }
 
-.home button {
-    background: var(--primary);
-    color: white;
+.home div {
+    display: grid;
+    row-gap: 3rem;
 
-    font-size: 1.3rem; 
-    font-weight: 600;
+}
 
-    margin-top: 3rem;
-    padding: 1rem 4rem;
-    border-radius: 1rem;
+
+
+
+/* ====== services =================================================*/
+
+
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-end;
+    height: 55rem;
+    
+    gap: 8%;   
+}
+
+.serviços .items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 20rem;
+    width: 50rem;
+}
+
+.serviços .items div{
+    display: flex;
+    gap: 2rem;
+}
+
+.serviços .items p{
+    font-size: 3rem;
+    font-weight: 500;
+}
+ 
+.serviços .items img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.serviços .sendNumber h3 {
+    font-size: 3rem;
+}
+.serviços .sendNumber {
+    display: grid;
+    
+    
+    left: 24rem;
+
+}
+
+.serviços .sendNumber input {
+    font-size: 2rem;
+    background: #d5d5d5;
     border: none;
-    cursor: pointer;
-}
+    padding: 1rem 5rem 1rem 2rem;
 
-.home button:hover {
-    background: var(--primary-hover);
 }
 
 /* ====== RESPONCIVE =================================================*/
@@ -122,14 +186,14 @@ nav ul li:hover {
 
 @media (min-width: 950px) {
 
-    .home img {
+    img {
         width: 33rem;
         height: 33rem;
     }
 }
 @media (min-width: 1050px) {
 
-    .home img {
+    img {
         width: 40rem;
         height: 40rem;
     }
