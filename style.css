@@ -37,14 +37,28 @@ button {
 }
 
 .wrapper {
-    padding-inline: 13%;
+    padding-inline: 2rem;
+}
+
+.home img,
+.serviços img {
+    width: 50rem;
+    height: 50rem;
+}
+
+ul {
+    list-style: none;
 }
 
 
 
 
+
 /* ====== NAVEGATION =================================================*/
+
 body {
+    margin: 0;
+    padding: 0;
     /* width: 100vw; */
     height: 100vh;
 }
@@ -73,7 +87,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
+    
 }
 
 nav ul li,
@@ -84,6 +98,9 @@ nav ul li,
     cursor: pointer;
     padding-left: 4rem;
 
+}
+nav ul li:hover {
+    color: var(--primary);
 }
 
 nav .login {
@@ -104,21 +121,18 @@ nav .login {
 
 /* ====== NAVEGATION =================================================*/
 
-.home {
+.home .wrapper {
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     align-content: flex-end;
-    padding-block: 10rem;
+    padding: 10rem 7rem;
+
     /* height: 77rem; */
     gap: 8%;
 }
 
-.home img,
-.serviços img {
-    width: 55rem;
-    height: 55rem;
-}
 
 
 .home h2 {
@@ -146,7 +160,9 @@ nav .login {
 
 
 
-.serviços {
+.serviços .wrapper {
+    margin: 0;
+
     display: grid;
     grid-template-areas:
         'A B'
@@ -155,7 +171,8 @@ nav .login {
 
     justify-content: space-between;
     align-items: center;
-    padding-block: 10rem;
+    padding: 10rem 15rem;
+
 
 
 }
@@ -227,16 +244,18 @@ nav .login {
 
 /* ====== EVIDENCE =================================================*/
 
-.depoimento {
+.depoimento .wrapper {
+    margin: 0;
 
 
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-block: 10rem;
+    padding: 10rem 15rem;
     gap: 1.5rem;
 
 }
+
 .depoimento .evidenceCard {
     max-width: 44rem;
     min-width: 12rem;
@@ -276,6 +295,104 @@ nav .login {
 
 
 
+/* ====== RESPONCIVE =================================================*/
+.footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer-info li:first-child,
+.footer-redes h3 {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.footer-info:first-child li:first-child{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer-redes-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+footer {
+    height: 20rem;
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    
+}
+foo
+
+footer .logo {
+    color: var(--gray);
+    font-size: 4rem;
+    font-weight: 800;
+
+}
+
+footer h3{
+    
+
+}
+footer p,
+footer a {
+    color: var(--gray);
+    font-size: 1.2rem;
+}
+
+footer a {
+    max-width: 1rem;
+}
+ */
 
 
 
