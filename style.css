@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;800&family=Roboto:wght@400;700&display=swap');
 
 * {
-    
+
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,7 @@
 :root {
     --primary: #D6000D;
     --primary-hover: hsl(356, 100%, 50%);
+    --gray: #d5d5d5;
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
@@ -47,6 +48,7 @@ body {
     /* width: 100vw; */
     height: 100vh;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -60,8 +62,9 @@ nav .logo {
     color: var(--primary);
     font-size: 4rem;
     font-weight: 800;
-    
+
 }
+
 nav .logo span {
     color: black;
 }
@@ -73,13 +76,14 @@ nav ul {
     list-style: none;
 }
 
-nav ul li, .login {
+nav ul li,
+.login {
     font-size: 1.5rem;
     font-weight: 600;
     color: black;
     cursor: pointer;
     padding-left: 4rem;
-    
+
 }
 
 nav .login {
@@ -90,7 +94,7 @@ nav .login {
     color: white;
     padding: 0.6rem 3rem;
     border-radius: 0.7rem;
-        
+
 }
 
 
@@ -105,7 +109,7 @@ nav .login {
     align-items: center;
     justify-content: space-between;
     align-content: flex-end;
-    padding-block: 35rem;
+    padding-block: 10rem;
     /* height: 77rem; */
     gap: 8%;
 }
@@ -117,14 +121,15 @@ nav .login {
 }
 
 
-.home h2{
-    font-size: 3rem; 
+.home h2 {
+    font-size: 3rem;
 
 
 }
+
 .home h1 {
     color: var(--primary);
-    font-size: 7rem; 
+    font-size: 7rem;
     font-weight: 700;
 }
 
@@ -143,24 +148,24 @@ nav .login {
 
 .serviços {
     display: grid;
-    grid-template-areas: 
-    'A B'
-    'C C'
+    grid-template-areas:
+        'A B'
+        'C C'
     ;
 
     justify-content: space-between;
     align-items: center;
-   
+    padding-block: 10rem;
+
+
 }
+
 .list {
-    
- 
-    
     grid-area: A;
 
 }
 
-.serviços .items{
+.serviços .items {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,34 +176,34 @@ nav .login {
     width: 50rem; */
 }
 
-.serviços .items div{
+.serviços .items div {
     display: flex;
     gap: 2rem;
 }
 
-.serviços .items p{
+.serviços .items p {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.serviços .items img{
-    
+.serviços .items img {
+
     width: 3rem;
     height: 3rem;
 }
 
 .serviços .img {
     grid-area: B;
-    
+
 }
 
 
 
-.serviços .sendNumber {  
-      
+.serviços .sendNumber {
+
     grid-area: C;
-   
-    
+
+
 }
 
 .serviços .sendNumber h3 {
@@ -207,7 +212,7 @@ nav .login {
 
 .serviços .sendNumber input {
     font-size: 2rem;
-    background: #d5d5d5;
+    background: var(--gray);
     border: none;
     border-radius: 1rem;
     width: 23rem;
@@ -220,6 +225,63 @@ nav .login {
     width: 25rem;
 }
 
+/* ====== EVIDENCE =================================================*/
+
+.depoimento {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 10rem;
+    gap: 1.5rem;
+
+}
+.depoimento .evidenceCard {
+    max-width: 44rem;
+    min-width: 12rem;
+
+    background: var(--gray);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    
+    gap: 1rem;
+}
+
+.depoimento .evidenceCard .redBoll {
+    background: var(--primary);
+    
+    min-width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.depoimento .evidenceCard p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+
+}
+.depoimento .evidenceCard h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.depoimento .evidenceCard h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
 /* ====== RESPONCIVE =================================================*/
 
 
@@ -230,6 +292,7 @@ nav .login {
         height: 33rem;
     }
 }
+
 @media (max-width: 1050px) {
 
     img {
