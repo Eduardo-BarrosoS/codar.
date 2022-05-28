@@ -90,7 +90,7 @@ nav ul {
     
 }
 
-nav ul li,
+nav ul li a,
 .login {
     font-size: 1.5rem;
     font-weight: 600;
@@ -99,7 +99,7 @@ nav ul li,
     padding-left: 4rem;
 
 }
-nav ul li:hover {
+nav ul li a:hover {
     color: var(--primary);
 }
 
@@ -302,6 +302,7 @@ nav .login {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-block: 5rem;
     
     
 }
@@ -309,13 +310,19 @@ nav .login {
 .footer-info {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .footer-info li:first-child,
 .footer-redes h3 {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.footer-info li {
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .footer-info:first-child li:first-child{
@@ -336,9 +343,14 @@ nav .login {
     gap: 1rem;
 }
 
+.footer-redes-icons svg path{
+        stroke: var(--primary);
+}
 
 
-
+.whatsapp svg path{
+    fill: var(--primary);
+}
 
 
 
